@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: monaco,"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    text-align: center;
+}
+body {
+    background-color: #f5f5f5;
+}
+h1 {
+    text-align: center;
+}
+.input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+a {
+    width: 100%;
+}
+#qrcode {
+    color: grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
