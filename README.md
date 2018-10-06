@@ -9,3 +9,10 @@ Electron app to share files from your laptop via QR codes
 - select file
 - scan qr
 - download
+
+
+## Development
+
+Start electron using
+
+`npm start`

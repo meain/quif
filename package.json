@@ -2,13 +2,43 @@
   "name": "quif",
   "version": "0.1.0",
   "main": "main.js",
+  "author": "Abin Simon <abinsimon10@gmail.com>",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "quif",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel"
+    }
   },
   "devDependencies": {
     "electron": "^3.0.2",
     "eslint": "^5.6.1",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "electron-builder": "^20.28.4"
   },
   "dependencies": {
     "express": "^4.16.3",
